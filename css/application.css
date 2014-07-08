@@ -1,0 +1,153 @@
+#nav {
+  background-color:black;
+  display: block;
+  height: 75px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+#nav li {
+  display: inline;
+  font-family: 'Shadows Into Light Two';
+  font-size: 25px;
+  list-style: none;
+  margin: 20px;
+}
+
+#nav a {
+  color:white;
+  text-decoration: none;
+}
+
+#nav a:hover {
+  text-decoration: underline;
+}
+
+#nav a.current-nav {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#main-container {
+  font-family: 'Poiret One';
+  margin-top: 75px;
+}
+
+#mary {
+  float:left;
+  margin-left: 50px;
+}
+
+#about-blurb {
+  float:left;
+  margin-left:600px;
+  margin-top:-30px;
+  width: 650px;
+}
+
+#about h1 {
+  font-size: 50px;
+  text-align:center;
+}
+
+#about p {
+  font-size:20px;
+}
+
+#right-curly-p {
+  margin:0;
+}
+
+#first-left-curly {
+  float:left;
+  width:45px;
+}
+
+#right-curly {
+  float:right;
+  width:50px;
+}
+
+#second-left-curly {
+  float:left;
+  width: 30px;
+}
+
+#blueprint-image {
+  background: url('../images/Blueprint-11.jpg');
+  background-size: cover;
+  filter: blur(3px);
+  height: 600px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 1;
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+}
+
+#work {
+  background-color: rgba(0, 0, 0, 0.4);
+  color:white;
+  margin-left: 20px;
+  padding:10px;
+  position: fixed;
+  width: 400px;
+  z-index:999;
+}
+
+#skills-wrapper {
+  background: url('../images/casey.jpg');
+  background-size: cover;
+  height: 550px;
+}
+
+#skills {
+  background-color: rgba(0, 0, 0, 0.4);
+  color:white;
+  margin-left: 150px;
+  padding:10px;
+  width: 600px;
+}
+
+#skills h3,
+#skills h2 {
+  font-family: 'Shadows Into Light Two';
+}
+
+#skills .skills-list {
+  font-size: 15px;
+}
+
+#contact {
+  margin: 10px;
+  text-align: center;
+}
+
+#contact-me {
+  text-align:center;
+  width: 30%;
+}
+
+#contact ul {
+  list-style: none;
+}
+
+#contact #pigeon{
+  float:left;
+  margin: 50px;
+  width:30%;
+}
+
+#contact li img {
+  width:150px;
+}
+
+#contact span {
+  display:none;
+}
+
+
