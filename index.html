@@ -5,56 +5,45 @@
   <link href="css/normalize.css" rel="stylesheet" type="text.css">
   <link href="css/application.css" rel="stylesheet" type="text.css">
 
-  <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two|Poiret+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two|Josefin+Slab' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
   <div id="nav">
-    <ul>
-      <li><a href="#about" id="about-link">About Me</a></li>
-      <li><a href="#skills" id="skills-link">Skills</a></li>
-      <li><a href="#work" id="work-link">Work</a></li>
-      <li><a href="#contact" id="contact-link">Contact</a></li>
+    <ul id="deep-link-list">
+      <li><a href="#about-wrapper" id="about-link" class="deep-link">About Me</a></li>
+      <li><a href="#skills-wrapper" id="skills-link" class="deep-link">Skills</a></li>
+      <li><a href="#work-wrapper" id="work-link" class="deep-link">Work</a></li>
+    </ul>
+
+    <ul id="contact-list">
+      <li><a href="http://www.linkedin.com/in/hippm/" target=_blank ><img src="images/linkedin.jpeg" alt="LinkedIn" class="contact-link"></a></li>
+      <li><a href="http://www.github.com/maryhipp" target=_blank><img src="images/github.jpeg" alt="GitHub" class="contact-link"></a></li>
+      <li><a href="http://www.twitter.com/hippmf" target=_blank><img src="images/twitter.jpeg" alt="Twitter" class="contact-link"></a></li>
+      <li><a href="https://medium.com/@hippmf" target=_blank><img src="images/medium.jpeg" alt="Medium" class="contact-link"></a></li>
+      <li><a href="http://simplyhipp.tumblr.com" target=_blank><img src="images/tumblr.jpeg" alt="Tumblr" class="contact-link"></a></li>
     </ul>
   </div>
 
-  <div id="main-container"></div>
-
-  <script id="about-template" type="text/template">
-    <div id="about">
-      <div id="mary">
-        <h1>Hi, my name is Mary!</h1>
-      </div>
-      <div id="about-blurb">
-        <img src="./images/curlybraceleft.png" id="first-left-curly" class="curly preload">
-        <h2> I&#39;m a problem solver at heart, and love building websites & software.</h2>
-        <p>I also enjoy building impressive cheese plates and IKEA furniture.</p>
-        <img src="./images/curlybraceright.png" id="right-curly" class="curly preload">
-        <div id="right-curly-p">
-          <h2>I write code in an organized and detail-oriented fashion. You&#39;ll be hard-pressed to find an indentation out of place when I&#39;m around.</h2>
-          <p>Relatedly, I enjoy efficiently loaded dishwashers and symmetry.</p>
+  <div id="main-container">
+    <div id="about-wrapper">
+      <div id="about">
+        <div id="mary">
+          <h1>Hi, my name is Mary!</h1>
         </div>
-        <img src="./images/curlybraceleft.png" id="second-left-curly" class="curly preload">
-        <h2>It&#39;s important to me to always be learning, always be having fun, and always be valued.</h2>
+        <div id="about-blurb">
+          <img src="./images/curlybraceleft.png" id="first-left-curly" class="curly preload">
+          <h2> I&#39;m a problem solver, and love building websites & software.<br><span>I also enjoy building impressive cheese plates and IKEA furniture.</span></h2>
+          <img src="./images/curlybraceright.png" id="right-curly" class="curly preload">
+          <div id="right-curly-p">
+            <h2>I write code in an organized and detail-oriented fashion, and am a big fan of structural integrity.<br><span>Relatedly, I appreciate efficiently loaded dishwashers and high levels of symmetry.</span></h2>
+          </div>
+          <img src="./images/curlybraceleft.png" id="second-left-curly" class="curly preload">
+          <h2>It&#39;s important to me to always be learning and always be having fun.</h2>
+        </div>
       </div>
     </div>
-  </script>
 
-  <script id="work-template" type="text/template">
-    <div id="blueprint-image" class="preload"></div>
-    <div id="work-wrapper">
-      <div id="work">
-        <h2>Work:</h2>
-            <ul>
-              <li>My Cookbook</li>
-              <li>Trend365</li>
-              <li>WildFire</li>
-            </ul>
-      </div>
-    </div>
-  </script>
-
-  <script id="skills-template" type="text/template">
     <div id="skills-wrapper">
       <div id="skills">
         <h2>What I Know:</h2>
@@ -67,40 +56,41 @@
         <h2>What I&#39;m Learning:</h2>
         <p class="skills-list"> iOS & Swift | Angular.js</p>
         <hr>
-        <h2>Other skills:</h2>
-        <p class="skills-list">SCRUM | Agile Methodologies | Management | Dog-whispering</p>
+        <h2>Other Skills:</h2>
+        <p class="skills-list">SCRUM | Agile Methodologies | Management | Dog-whispering |  Wireframing | Learning</p>
       </div>
     </div>
-  </script>
 
-  <script id="contact-template" type="text/template">
-    <div id="contact-wrapper">
-      <div id="contact">
+    <div id="portfolio-intro">
+      <h2>Portfolio</h2>
+      <p>In Spring 2014, I began General Assmemb.ly's full-time web development bootcamp. It is pretty crazy how much you can learn from coding all day, every day for twelve weeks.</p>
+      <p>See for yourself...</p>
+    </div>
 
-        <h2><img src="./images/contact.png" id="contact-me" class="preload"></h2>
-          <ul>
-            <li><a href="http://www.linkedin.com/in/hippm/" target=_blank><img src="images/linkedin.png" alt="LinkedIn"></a><br><span id="linkedin-details">{{For my background and resume}}</span></li>
-            <li><a href="http://www.github.com/maryhipp" target=_blank><img src="images/GitHub_Logo.png" alt="GitHub" id="github"></a><br><span id="github-details">{{For more about my projects, past and present}}</span></li>
-            <li><a href="http://www.twitter.com/hippmf" target=_blank><img src="images/twitterlogo.png" alt="Twitter"></a><br><span id="twitter-details">{{For things that I think are cool and interesting, in technology and beyond}}</span></li>
-            <li><a href="http://simplyhipp.tumblr.com" target=_blank><img src="images/tumblrlogo.jpg" alt="Tumblr"></a><br><span id="tumblr-details">{{For a rabbithole of things I think are funny, literary & pop culture references galore, and adorable photos of goldens and elephants}}</span> </li>
-          </ul>
-
+    <div id="work-wrapper">
+      <div id="work">
+        <div id="cookbook" class="project">
+          <img src="./images/cookbook.png">
+          <h3><a href="http://myc00kb00k.herokuapp.com" target=_blank>My Cookbook</a></h3>
+          <p>Searching & saving your favorite recipes & grocery lists has never been so delightful.</p>
+          <p>Ruby on Rails | PostgreSQL | BigOven API | Hand-rolled Authentication | RSpec & Capybara | HTML/CSS</p>
+        </div>
+        <div id="wildfire" class="project">
+          <img src="./images/wildfire.png">
+          <h3><a href="http://wild-fyre.herokuapp.com" target=_blank>WildFire</a></h3>
+          <p>Create excitement and engage new fans with buzz-driven maps to see your event grow from a spark into a wildfire!</p>
+          <p>Ruby on Rails | PostgreSQL | Google Maps API | Google Geocoding API | Twitter REST API | Devise & OAuth | RSpec & Capybara | HTML/CSS | JavaScript</p>
+        </div>
       </div>
     </div>
-  </script>
+
+  </div>
 
 
   <script src="js/vendor/jquery.js"></script>
   <script src="js/vendor/underscore.js"></script>
   <script src="js/vendor/backbone.js"></script>
 
-
-  <script src="js/portfolio/views/about.js"></script>
-  <script src="js/portfolio/views/skills.js"></script>
-  <script src="js/portfolio/views/work.js"></script>
-  <script src="js/portfolio/views/contact.js"></script>
-  <script src="js/portfolio/router.js"></script>
-  <script src="js/portfolio/main.js"></script>
 </body>
 
 </html>
