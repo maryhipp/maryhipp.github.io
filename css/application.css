@@ -22,7 +22,6 @@
 
 #nav #deep-link-list {
   float:left;
-  margin-left: 60px;
 }
 
 #nav #deep-link-list li {
@@ -45,7 +44,6 @@
 #nav #contact-list {
   display: inline;
   float:right;
-  margin-right:80px;
 }
 
 #nav #contact-list li{
@@ -105,17 +103,21 @@
 
 #first-left-curly {
   float:left;
-  width:30px;
+  width:50px;
+}
+
+#second {
+  text-align: right;
 }
 
 #right-curly {
   float:right;
-  width:40px;
+  width:50px;
 }
 
 #second-left-curly {
   float:left;
-  width: 40px;
+  width: 50px;
 }
 
 /*------skills------*/
@@ -215,24 +217,6 @@
   margin: 0;
 }
 
-/*----------------------*/
-/*----Smaller Browser---*/
-/*----------------------*/
-@media screen and (max-width: 1024px) {
-  #nav #deep-link-list,
-  #nav #contact-list {
-    display:block;
-    float:none;
-    margin: 30 auto;
-    margin-left: 0;
-    margin-right: 0;
-    text-align: center;
-  }
-
-  #nav {
-    height: 150px;
-  }
-}
 /*----------------------*/
 /*--------iPhone--------*/
 /*----------------------*/
