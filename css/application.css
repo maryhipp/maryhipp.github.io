@@ -120,7 +120,7 @@
 
 /*------skills------*/
 #skills-wrapper {
-  background: url('../images/casey.jpg');
+  background: url('../images/casey.jpg') no-repeat center center;
   background-size: cover;
   height: 600px;
   padding-top:60px;
@@ -131,7 +131,7 @@
   color:white;
   margin-left: 150px;
   padding:10px;
-  width: 600px;
+  width: 50%;
 }
 
 #skills h3,
