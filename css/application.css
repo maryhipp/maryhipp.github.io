@@ -224,11 +224,15 @@
   }
 
   #nav {
-    height: 150px;
+    height: 250px;
   }
 
   #nav #deep-link-list li {
     font-size: 80px;
+  }
+
+  #nav .contact-link {
+    height: 90px;
   }
 
   #nav #deep-link-list,
