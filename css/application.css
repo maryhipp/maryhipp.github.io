@@ -227,6 +227,10 @@
     height: 150px;
   }
 
+  #nav #deep-link-list li {
+    font-size: 40px;
+  }
+
   #nav #deep-link-list,
   #nav #contact-list {
     display:block;
