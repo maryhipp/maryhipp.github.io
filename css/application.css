@@ -169,20 +169,25 @@
 
 #work .project h3 {
   font-size: 40px;
-  margin: 10px 0;
+  margin: 10px 0 0 0;
   text-align: center;
 }
 
-#work h3 a {
+#work a {
   color:black;
   text-decoration: none;
 }
 
-#work h3 a:hover {
+#work a:hover {
   text-decoration: underline;
 }
 
 #work p {
   font-size: 20px;
 }
+
+#work .source {
+  margin: 0;
+}
+
 
