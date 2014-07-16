@@ -60,7 +60,7 @@
 }
 
 /*------mary------*/
-#mary {
+#mary-wrapper {
   background-image: url('../images/headshot_wood.jpg');
   background-size: cover;
   font-size: 27px;
@@ -68,13 +68,15 @@
   margin-top:-30px;
   padding-left: 100px;
   padding-top: 200px;
-  text-align:center;
+
 }
 
-#mary h1 {
-  float:left;
+#mary {
+  left: 100px;
   margin-top: 30px;
 }
+
+
 
 /*------about------*/
 #about-wrapper {
