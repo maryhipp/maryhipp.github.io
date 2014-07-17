@@ -60,7 +60,7 @@
 }
 
 /*------mary------*/
-#mary-wrapper {
+#about-me {
   background-image: url('../images/headshot_wood.jpg');
   background-size: cover;
   font-size: 27px;
@@ -74,9 +74,12 @@
 #mary {
   left: 100px;
   margin-top: 30px;
+  width: 500px;
 }
 
-
+#mary h1 {
+  margin-bottom: 5px;
+}
 
 /*------about------*/
 #about-wrapper {
@@ -114,23 +117,24 @@
 
 #right-curly {
   float:right;
-  width:50px;
+  width:55px;
 }
 
 #second-left-curly {
   float:left;
-  width: 50px;
+  width: 35px;
 }
 
 /*------skills------*/
-#skills-wrapper {
+#skills {
   background: url('../images/casey.jpg') no-repeat center center;
   background-size: cover;
   height: 600px;
-  padding-top:60px;
+  padding-top:50px;
+  padding-bottom: 50px;
 }
 
-#skills {
+#skills-content {
   background-color: rgba(0, 0, 0, 0.4);
   color:white;
   margin-left: 150px;
@@ -138,29 +142,38 @@
   width: 50%;
 }
 
-#skills h3,
-#skills h2 {
+#skills-content h3,
+#skills-content h2 {
   font-family: 'Shadows Into Light Two';
 }
 
-#skills .skills-list {
+#skills-content .skills-list {
   font-size: 20px;
 }
 
 /*------portfolio intro------*/
-#portfolio-intro {
+#work {
   margin: 0 auto;
   text-align: center;
   width: 80%;
 }
 
-#portfolio-intro h2 {
+#work h2 {
   font-size: 60px;
 }
 
-#portfolio-intro p {
+#work p {
   font-family: 'Shadows Into Light Two';
   font-size: 30px;
+}
+
+#work a {
+  color:gray;
+  text-decoration: none;
+}
+
+#work a:hover {
+  text-decoration: underline;
 }
 
 /*------portfolio------*/
@@ -170,14 +183,14 @@
   padding: 40px;
 }
 
-#work {
+#portfolio {
   background-color: rgba(255, 255, 255, 0.6);
   color:black;
   margin: 0 auto;
   padding-bottom: 20px;
 }
 
-#work .project {
+#portfolio .project {
   display: inline-block;
   margin: 40px;
   text-align: center;
@@ -185,38 +198,43 @@
   width: 40%;
 }
 
-#work #sentitrend {
+#portfolio #sentitrend {
   display:block;
   margin: 0 auto;
 }
 
 
-#work .project img {
+#portfolio .project img {
   border: 2px solid black;
   width:100%;
 }
 
-#work .project h3 {
+#portfolio .project h3 {
   font-size: 40px;
   margin: 10px 0 0 0;
   text-align: center;
 }
 
-#work a {
+#portfolio a {
   color:black;
+}
+
+
+#portfolio p {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+#portfolio .source {
+  margin: 0;
+}
+
+#portfolio .source a {
   text-decoration: none;
 }
 
-#work a:hover {
+#portfolio .source a:hover {
   text-decoration: underline;
-}
-
-#work p {
-  font-size: 20px;
-}
-
-#work .source {
-  margin: 0;
 }
 
 /*----------------------*/
