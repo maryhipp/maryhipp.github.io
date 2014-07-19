@@ -5,7 +5,7 @@
 /*------navigation------*/
 #main-container {
   font-family: 'Josefin Slab';
-  position: absolute;
+  position: relative;
   top: 75px;
 }
 
@@ -271,7 +271,11 @@
 		#nav #contact-list {
 		  float:none;
 		  text-align:center;
-		  margin-top: 20px;
+		  margin: 20px auto;
+		  width: 100%;
+		}
+		#nav #contact-list li{
+		  margin:6%;
 		}
 	}
 
