@@ -5,7 +5,7 @@
 /*------navigation------*/
 #main-container {
   font-family: 'Josefin Slab';
-  padding-top: 95px;
+  padding-top: 91px;
 }
 
 #responsive_img {
@@ -20,8 +20,6 @@
 #nav {
   background-color:black;
   display: block;
-  clear:both;
-  padding:3px;
   position: fixed;
   top: 0px;
   width:100%;
@@ -299,6 +297,7 @@
 			display:block;
 			border-radius: 100%;
 			margin: 10px auto;
+			width: 100%;
 		}
 		#mary {
 			padding: 5px;
@@ -316,11 +315,23 @@
 
 		#about-wrapper {
 			padding: 0;
+			width:100%;
 		}
 
 		#about-blurb: {
 			margin: 0px;
 			width: 100%;
+		}
+
+		.curly {
+			display:none;
+		}
+
+		#first,
+		#third {
+			background-color: black;
+			color:white;
+			padding:5px;
 		}
 
 		#about {
@@ -329,14 +340,11 @@
 		}
 		#about h2 {
 			font-size: 25px;
+			line-height:30px;
 		}
 
 		#about span {
 			font-size: 20px;
-		}
-
-		.curly {
-			display:none;
 		}
 
 		#responsive_casey {
@@ -352,13 +360,9 @@
 
 		#skills-content {
 			margin: 0;
-			padding: 30px;
+			padding: 0;
 			text-align: center;
 			width: 100%;
-		}
-
-		#skill-content h2 {
-			font-szi
 		}
 
 		#work-wrapper {
