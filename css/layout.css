@@ -65,7 +65,9 @@
 /*------mary------*/
 #about-me {
   background-image: url('../images/headshot_wood.jpg');
-  background-size: cover;
+  background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
   font-size: 27px;
   height:550px;
   padding-left: 10%;
@@ -130,8 +132,9 @@
 
 /*------skills------*/
 #skills {
-  background: url('../images/casey.jpg') no-repeat center center;
-  background-size: cover;
+  background: url('../images/casey.jpg') no-repeat center center;background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
   height: 600px;
   padding:70px;
 }
