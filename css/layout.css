@@ -13,15 +13,17 @@
 #nav {
   background-color:black;
   display: block;
-  height: 75px;
+  clear:both;
+  padding:3px;
   position: fixed;
   top: 0px;
-  width: 100%;
+  width:100%;
   z-index: 2;
 }
 
 #nav #deep-link-list {
   float:left;
+  margin-top: 40px;
 }
 
 #nav #deep-link-list li {
@@ -44,6 +46,7 @@
 #nav #contact-list {
   display: inline;
   float:right;
+  margin-top:20px;
 }
 
 #nav #contact-list li{
@@ -65,26 +68,25 @@
   background-size: cover;
   font-size: 27px;
   height:550px;
-  margin-top:-30px;
-  padding-left: 100px;
-  padding-top: 200px;
+  padding-left: 10%;
+  padding-right:50%;
+  padding-top: 15%;
 
 }
 
 #mary {
+	color:black;
   left: 100px;
   margin-top: 30px;
-  width: 500px;
 }
 
 #mary h1 {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 /*------about------*/
 #about-wrapper {
-  padding:20px;
-  padding-bottom: 40px;
+  padding:40px;
   width: 100%;
 }
 
@@ -99,7 +101,7 @@
 
 #about span {
   font-family: 'Shadows Into Light Two';
-  font-size:20px;
+  font-size:25px;
 }
 
 #right-curly-p {
@@ -108,21 +110,22 @@
 
 #first-left-curly {
   float:left;
-  width:50px;
+  width:60px;
 }
 
 #second {
+	margin: 20px;
   text-align: right;
 }
 
 #right-curly {
   float:right;
-  width:55px;
+  width:65px;
 }
 
 #second-left-curly {
   float:left;
-  width: 35px;
+  width: 45px;
 }
 
 /*------skills------*/
@@ -130,41 +133,47 @@
   background: url('../images/casey.jpg') no-repeat center center;
   background-size: cover;
   height: 600px;
-  padding-top:50px;
-  padding-bottom: 50px;
+  padding:70px;
 }
 
 #skills-content {
   background-color: rgba(0, 0, 0, 0.4);
   color:white;
+  height:100%;
   margin-left: 150px;
-  padding:10px;
+  padding:10px 10px 0 10px;
   width: 50%;
 }
 
 #skills-content h3,
 #skills-content h2 {
+	color:white;
   font-family: 'Shadows Into Light Two';
 }
 
 #skills-content .skills-list {
-  font-size: 20px;
+  font-size: 23px;
 }
 
 /*------portfolio intro------*/
 #work {
   margin: 0 auto;
+  padding: 50px 0;
   text-align: center;
-  width: 80%;
+  width: 90%;
 }
 
 #work h2 {
   font-size: 60px;
+  margin-bottom:60px;
 }
 
 #work p {
+	color:black;
   font-family: 'Shadows Into Light Two';
   font-size: 30px;
+  line-height:35px;
+  margin-top:60px;
 }
 
 #work a {
@@ -240,31 +249,24 @@
 /*----------------------*/
 /*--------iPhone--------*/
 /*----------------------*/
-@media screen and (max-width: 600px) {
-  body {
-    -webkit-text-size-adjust:none;
-  }
 
-  #nav {
-    height: 300px;
-  }
 
-  #nav #deep-link-list li {
-    font-size: 75px;
-  }
 
-  #nav .contact-link {
-    height: 130px;
-  }
+/* #Media Queries
+================================================== */
 
-  #nav #deep-link-list,
-  #nav #contact-list {
-    display:block;
-    float:none;
-    margin: 30 auto;
-    margin-left: 0;
-    margin-right: 0;
-    text-align: center;
-  }
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
 
-}
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {}
+
