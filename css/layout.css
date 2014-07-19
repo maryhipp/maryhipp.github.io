@@ -4,9 +4,16 @@
 
 /*------navigation------*/
 #main-container {
-	clear:both;
   font-family: 'Josefin Slab';
   padding-top: 95px;
+}
+
+#responsive_img {
+	display:none;
+}
+
+#responsive_casey {
+	display: none;
 }
 
 /*------navigation------*/
@@ -65,14 +72,12 @@
 /*------mary------*/
 #about-me {
   background-image: url('../images/headshot_wood.jpg');
-  background-repeat:no-repeat;
 	background-size:cover;
-	background-position:center;
   font-size: 27px;
   height:550px;
   padding-left: 10%;
   padding-right:50%;
-  padding-top: 15%;
+  padding-top: 5%;
 
 }
 
@@ -88,12 +93,12 @@
 
 /*------about------*/
 #about-wrapper {
-  padding:40px;
+
   width: 100%;
 }
 
 #about-blurb {
-  margin: 0 auto;
+  margin: 20px auto;
   width: 85%;
 }
 
@@ -133,7 +138,7 @@
 /*------skills------*/
 #skills {
   background: url('../images/casey.jpg') no-repeat center center;background-repeat:no-repeat;
-	background-size:contain;
+	background-size:cover;
 	background-position:center;
   height: 600px;
   padding:70px;
@@ -261,12 +266,12 @@
 	/* Smaller than standard 960 (devices and browsers) */
 	@media only screen and (max-width: 959px) {
 		#main-container {
-			padding-top:162px;
+			padding-top:147px;
 		}
 		#nav #deep-link-list {
 		  float:none;
 		  text-align:center;
-		  margin-top: 20px;
+		  margin-top: 5px;
 		}
 		#nav #contact-list {
 			display: inline-block;
@@ -279,8 +284,99 @@
 			margin: 6%;
 		}
 		#nav #contact-list li{
-		  margin:5%;
+		  margin: 5px;
 		}
+
+		#about-me {
+			background-image: none;
+			height:100%;
+			margin: 0 auto;
+			padding: 0;
+			width: 100%;
+		}
+
+		#responsive_img {
+			display:block;
+			border-radius: 100%;
+			margin: 10px auto;
+		}
+		#mary {
+			padding: 5px;
+			text-align: center;
+
+		}
+		#mary h1 {
+			font-size: 35px;
+			margin-top:0px;
+		}
+
+		#mary ul {
+			font-size:25px;
+		}
+
+		#about-wrapper {
+			padding: 0;
+		}
+
+		#about-blurb: {
+			margin: 0px;
+			width: 100%;
+		}
+
+		#about {
+			margin: 0 auto;
+			width:100%;
+		}
+		#about h2 {
+			font-size: 25px;
+		}
+
+		#about span {
+			font-size: 20px;
+		}
+
+		.curly {
+			display:none;
+		}
+
+		#responsive_casey {
+			display:block;
+			width:100%;
+		}
+
+		#skills {
+			background-image: none;
+			height: 80%;
+			padding: 0px;
+		}
+
+		#skills-content {
+			margin: 0;
+			padding: 30px;
+			text-align: center;
+			width: 100%;
+		}
+
+		#skill-content h2 {
+			font-szi
+		}
+
+		#work-wrapper {
+			padding: 20px;
+		}
+
+		#portfolio {
+			padding:20px;
+		}
+
+		#portfolio .project {
+		  display: block;
+		  margin: 0 auto 50px auto;
+		  text-align: center;
+		  vertical-align: top;
+		  width: 80%;
+		}
+
 	}
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
