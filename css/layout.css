@@ -71,7 +71,7 @@
 #about-me {
   background-image: url('../images/headshot_wood.jpg');
 	background-size:cover;
-	background-position: right;
+	background-position: center;
   font-size: 27px;
   height:550px;
   padding-left: 10%;
