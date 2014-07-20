@@ -289,7 +289,29 @@
 	}
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		#main-container {
+			padding-top:141px;
+		}
+		#nav #deep-link-list {
+		  float:none;
+		  text-align:center;
+		  margin-top: 5px;
+		}
+		#nav #contact-list {
+			display: inline-block;
+		  float:none;
+		  text-align:center;
+		  margin: 20px auto;
+		  width: 100%;
+		}
+		#nav #deep-link-list li {
+			margin: 6%;
+		}
+		#nav #contact-list li{
+		  margin: 5px;
+		}
+	}
 
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
