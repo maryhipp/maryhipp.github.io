@@ -71,6 +71,7 @@
 #about-me {
   background-image: url('../images/headshot_wood.jpg');
 	background-size:cover;
+	background-position: right;
   font-size: 27px;
   height:550px;
   padding-left: 10%;
@@ -137,16 +138,16 @@
 #skills {
   background: url('../images/casey.jpg') no-repeat center center;background-repeat:no-repeat;
 	background-size:cover;
-	background-position:center;
+	background-position:right;
   height: 600px;
-  padding:70px;
+  padding:70px 0;
 }
 
 #skills-content {
   background-color: rgba(0, 0, 0, 0.4);
   color:white;
   height:100%;
-  margin-left: 150px;
+  margin-left: 10%;
   padding:10px 10px 0 10px;
   width: 50%;
 }
@@ -263,7 +264,27 @@
 
 	/* Smaller than standard 960 (devices and browsers) */
 	@media only screen and (max-width: 959px) {
-
+		#main-container {
+			padding-top:141px;
+		}
+		#nav #deep-link-list {
+		  float:none;
+		  text-align:center;
+		  margin-top: 5px;
+		}
+		#nav #contact-list {
+			display: inline-block;
+		  float:none;
+		  text-align:center;
+		  margin: 20px auto;
+		  width: 100%;
+		}
+		#nav #deep-link-list li {
+			margin: 6%;
+		}
+		#nav #contact-list li{
+		  margin: 5px;
+		}
 
 	}
 
