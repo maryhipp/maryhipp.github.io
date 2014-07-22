@@ -89,6 +89,10 @@
   margin-bottom: 15px;
 }
 
+#mary li {
+	font-family: "Shadows Into Light Two";
+}
+
 /*------about------*/
 #about-wrapper {
 	padding: 10px;
