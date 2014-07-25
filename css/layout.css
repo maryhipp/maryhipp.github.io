@@ -406,7 +406,7 @@
 		#skills {
 			background-image: none;
 			height: 80%;
-			padding: 0px;
+			padding: 0px 5px;
 		}
 
 		#skills-content {
