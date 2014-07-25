@@ -70,10 +70,12 @@
 /*------mary------*/
 #about-me {
   background-image: url('../images/upper_lake.jpg');
-	background-size:cover;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
   font-size: 27px;
   height:550px;
-  padding-top: 1%;
+  padding-top: 0.1%;
   text-align: center;
 }
 
@@ -83,7 +85,8 @@
 }
 
 #mary h1 {
-  margin-bottom: 15px;
+  font-size:45px;
+  margin-bottom: 10px;
 }
 
 #mary li {
@@ -316,7 +319,7 @@
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
 		#main-container {
-			padding-top:147px;
+			padding-top:141px;
 		}
 		#nav #deep-link-list {
 		  float:none;
@@ -337,7 +340,7 @@
 		  margin: 5px;
 		}
 
-		#about-me {
+		/*#about-me {
 			background-image: none;
 			height:100%;
 			margin: 0 auto;
@@ -350,12 +353,8 @@
 			border-radius: 100%;
 			margin: 10px auto;
 			width: 100%;
-		}
-		#mary {
-			padding: 5px;
-			text-align: center;
+		}*/
 
-		}
 		#mary h1 {
 			font-size: 35px;
 			margin-top:0px;
