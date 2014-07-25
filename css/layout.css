@@ -69,20 +69,17 @@
 
 /*------mary------*/
 #about-me {
-  background-image: url('../images/headshot_wood.jpg');
+  background-image: url('../images/upper_lake.jpg');
 	background-size:cover;
   font-size: 27px;
   height:550px;
-  padding-left: 10%;
-  padding-right:50%;
-  padding-top: 5%;
-
+  padding-top: 1%;
+  text-align: center;
 }
 
 #mary {
 	color:black;
   left: 100px;
-  margin-top: 30px;
 }
 
 #mary h1 {
