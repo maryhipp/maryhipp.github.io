@@ -8,9 +8,6 @@
   padding-top: 91px;
 }
 
-#responsive_img {
-	display:none;
-}
 
 #responsive_casey {
 	display: none;
@@ -123,7 +120,7 @@
 }
 
 #second {
-	margin: 20px;
+	margin: 40px;
   text-align: right;
 }
 
@@ -139,7 +136,8 @@
 
 /*------skills------*/
 #skills {
-  background: url('../images/casey.jpg') no-repeat center center;background-repeat:no-repeat;
+  background: url('../images/casey.jpg') no-repeat center center;
+  background-repeat:no-repeat;
 	background-size:cover;
 	background-position:right;
   height: 600px;
@@ -199,7 +197,7 @@
 #work-wrapper {
   background-image: url('../images/Blueprint-11.jpg.png');
   background-size:cover;
-  padding: 40px;
+  padding: 50px;
 }
 
 #portfolio {
@@ -211,7 +209,7 @@
 
 #portfolio .project {
   display: inline-block;
-  margin: 40px;
+  margin: 50px;
   text-align: center;
   vertical-align: top;
   width: 40%;
