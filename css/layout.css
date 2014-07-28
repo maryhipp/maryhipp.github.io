@@ -8,6 +8,9 @@
   padding-top: 91px;
 }
 
+#responsive_img {
+  display: none;
+}
 
 #responsive_casey {
 	display: none;
@@ -66,14 +69,15 @@
 
 /*------mary------*/
 #about-me {
-  background-image: url('../images/upper_lake.jpg');
-  background-size: auto 100%;
+  background-image: url('../images/headshot_wood.jpg');
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center top;
   font-size: 27px;
   height:550px;
-  padding-top: 0.1%;
-  text-align: center;
+  padding-left: 10%;
+  padding-right:50%;
+  padding-top: 15%;
+  padding-top: 5%;
 }
 
 #mary {
@@ -338,7 +342,7 @@
 		  margin: 5px;
 		}
 
-		/*#about-me {
+		#about-me {
 			background-image: none;
 			height:100%;
 			margin: 0 auto;
@@ -351,7 +355,7 @@
 			border-radius: 100%;
 			margin: 10px auto;
 			width: 100%;
-		}*/
+		}
 
 		#mary h1 {
 			font-size: 35px;
