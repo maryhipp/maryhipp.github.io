@@ -69,7 +69,7 @@
 
 /*------mary------*/
 #about-me {
-  background-image: url('../images/headshot_retouched.jpg');
+  background-image: url('../images/headshot_wood.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   font-size: 27px;
@@ -77,8 +77,7 @@
   margin-top: -91px;
   padding-left: 10%;
   padding-right:50%;
-  padding-top: 161px;
-
+  padding-top: 191px;
 }
 
 #mary {
