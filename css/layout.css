@@ -391,16 +391,19 @@
 			display:block;
 			border-radius: 100%;
 			margin: 10px auto;
-			width: 100%;
+			width: 90%;
 		}
 
 		#mary h1 {
-			font-size: 35px;
-			margin-top:0px;
+			font-size: 40px;
+			margin-top:10px;
+      text-align: center;
 		}
 
 		#mary ul {
 			font-size:25px;
+      margin: 10px;
+      text-align: center;
 		}
 
 		#about-wrapper {
