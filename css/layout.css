@@ -88,7 +88,7 @@
 
 #mary h1 {
   font-family: "Josefin Slab";
-  font-size:45px;
+  font-size:50px;
   margin-bottom: 5px;
 }
 
@@ -277,8 +277,12 @@
   background-color:black;
   color:white;
   font-size: 20px;
-  padding: 20px;
+  padding: 40px;
   text-align: center;
+}
+
+#footer p {
+  margin:0;
 }
 
 
