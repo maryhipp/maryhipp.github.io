@@ -67,8 +67,8 @@
   -moz-border-radius: 50px;
 }
 
-/*------mary------*/
-#about-me {
+/*------intro------*/
+#intro {
   background-image: url('../images/headshot_wood.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -80,72 +80,120 @@
   padding-top: 191px;
 }
 
-#mary {
+#intro-content {
 	color:black;
   left: 100px;
 }
 
-#mary h1 {
+#intro-content h1 {
   font-family: "Josefin Slab";
   font-size:50px;
   margin-bottom: 5px;
 }
 
-#mary ul {
+#intro-content ul {
   list-style: none;
   margin:0;
   padding:0;
 }
 
-#mary li {
+#intro-content li {
 	font-family: "Shadows Into Light Two";
   line-height:0.75em;
   list-style: none;
 }
 
-/*------about------*/
-#about-wrapper {
-	padding: 10px 0;
-  width: 100%;
+/*------portfolio intro------*/
+#portfolio {
+  margin: -91px auto 0 auto;
+  padding: 141px 0 50px 0;
+  text-align: center;
+  width: 90%;
 }
 
-#about-blurb {
-  margin: 20px auto 120px auto;
-  width: 85%;
+#portfolio h2 {
+  font-family: 'Josefin Slab';
+  font-size: 60px;
+  margin-bottom:60px;
 }
 
-#about h2 {
-  font-family: "Josefin Slab";
-  font-size: 30px;
-}
-
-#about span {
+#portfolio p {
+  color:black;
   font-family: 'Shadows Into Light Two';
-  font-size:25px;
+  font-size: 30px;
+  line-height:35px;
+  margin-top:60px;
 }
 
-#right-curly-p {
-  margin:0;
+#portfolio a {
+  color:gray;
+  text-decoration: none;
 }
 
-#first-left-curly {
-  float:left;
-  width:60px;
+#portfolio a:hover {
+  text-decoration: underline;
 }
 
-#second {
-	margin: 40px;
-  text-align: right;
+
+/*------portfolio------*/
+#work-wrapper {
+  background-image: url('../images/graph_paper.jpg');
+  background-size:cover;
 }
 
-#right-curly {
-  float:right;
-  width:65px;
+#work {
+  background-color: rgba(255, 255, 255, 0.6);
+  color:black;
+  margin: 0 auto;
+  padding-bottom: 120px;
 }
 
-#second-left-curly {
-  float:left;
-  width: 45px;
+#work .project {
+  display: inline-block;
+  margin: 4.5%;
+  text-align: center;
+  vertical-align: top;
+  width: 40%;
+}
+
+#work #sentitrend {
+  display:block;
+  margin: 0 auto;
+}
+
+
+#work .project img {
+  border: 2px solid black;
+  width:100%;
+}
+
+#work .project h3 {
+  font-family: 'Josefin Slab';
+  font-size: 40px;
+  margin: 10px 0 0 0;
+  text-align: center;
+}
+
+#work a {
+  color:black;
+}
+
+
+#work p {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+#work .source {
+  margin: 0;
+}
+
+#work .source a {
+  text-decoration: none;
+}
+
+#work .source a:hover {
+  text-decoration: underline;
 }
 
 /*------skills------*/
@@ -154,13 +202,13 @@
   background-repeat:no-repeat;
 	background-size:cover;
 	background-position:right;
-  height: 600px;
+  /*height: 600px;*/
   margin-top: -91px;
   padding:91px 0 70px 0;
 }
 
 #skills-content {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   color:white;
   height:100%;
   margin-left: 10%;
@@ -175,99 +223,61 @@
 }
 
 #skills-content .skills-list {
-  font-size: 23px;
+  font-size: 25px;
+  line-height:25px;
 }
 
-/*------portfolio intro------*/
-#work {
-  margin: -91px auto 0 auto;
-  padding: 141px 0 50px 0;
-  text-align: center;
-  width: 90%;
+/*------about------*/
+#about-me {
+  margin-top: -91px;
+  padding: 111px 0;
+  width: 100%;
 }
 
-#work h2 {
+#about-content {
+  margin: 20px auto 120px auto;
+  width: 85%;
+}
+
+#about-content h2 {
   font-family: 'Josefin Slab';
   font-size: 60px;
   margin-bottom:60px;
 }
 
-#work p {
-	color:black;
-  font-family: 'Shadows Into Light Two';
+#about-content p {
+  font-family: "Josefin Slab";
   font-size: 30px;
-  line-height:35px;
-  margin-top:60px;
+  line-height: 35px;
 }
 
-#work a {
-  color:gray;
-  text-decoration: none;
+#about-content span {
+  font-family: 'Shadows Into Light Two';
+  font-size:25px;
 }
 
-#work a:hover {
-  text-decoration: underline;
+#right-curly-p {
+  margin:0;
 }
 
-/*------portfolio------*/
-#work-wrapper {
-  background-image: url('../images/graph_paper.jpg');
-  background-size:cover;
+#first-left-curly {
+  float:left;
+  width:60px;
 }
 
-#portfolio {
-  background-color: rgba(255, 255, 255, 0.6);
-  color:black;
-  margin: 0 auto;
-  padding-bottom: 20px;
+#second {
+  margin: 40px;
+  text-align: right;
 }
 
-#portfolio .project {
-  display: inline-block;
-  margin: 4.5%;
-  text-align: center;
-  vertical-align: top;
-  width: 40%;
+#right-curly {
+  float:right;
+  width:65px;
 }
 
-#portfolio #sentitrend {
-  display:block;
-  margin: 0 auto;
-}
-
-
-#portfolio .project img {
-  border: 2px solid black;
-  width:100%;
-}
-
-#portfolio .project h3 {
-  font-family: 'Josefin Slab';
-  font-size: 40px;
-  margin: 10px 0 0 0;
-  text-align: center;
-}
-
-#portfolio a {
-  color:black;
-}
-
-
-#portfolio p {
-  font-size: 20px;
-  margin-top: 5px;
-}
-
-#portfolio .source {
-  margin: 0;
-}
-
-#portfolio .source a {
-  text-decoration: none;
-}
-
-#portfolio .source a:hover {
-  text-decoration: underline;
+#second-left-curly {
+  float:left;
+  width: 45px;
 }
 
 /*-------Footer---------*/
@@ -376,13 +386,13 @@
 		  width: 100%;
 		}
 		#nav #deep-link-list li {
-			margin: 6%;
+			margin: 4%;
 		}
 		#nav #contact-list li{
 		  margin: 5px;
 		}
 
-		#about-me {
+		#intro {
 			background-image: none;
 			height:100%;
 			margin: 0 auto;
@@ -397,77 +407,23 @@
 			width: 90%;
 		}
 
-		#mary h1 {
+		#intro-content h1 {
 			font-size: 40px;
 			margin-top:10px;
       text-align: center;
 		}
 
-		#mary ul {
+		#intro-content ul {
 			font-size:25px;
       margin: 10px;
       text-align: center;
 		}
 
-		#about-wrapper {
-			padding: 0;
-			width:100%;
-		}
-
-		#about-blurb: {
-			margin: 0px;
-			width: 100%;
-		}
-
-		.curly {
-			display:none;
-		}
-
-		#first,
-		#third {
-			background-color: black;
-			color:white;
+		#work {
 			padding:5px;
 		}
 
-		#about {
-			margin: 0 auto;
-			width:100%;
-		}
-		#about h2 {
-			font-size: 25px;
-			line-height:30px;
-		}
-
-		#about span {
-			font-size: 20px;
-		}
-
-		#responsive_casey {
-			display:block;
-			width:100%;
-		}
-
-		#skills {
-			background-image: none;
-			height: 80%;
-			padding: 0px 5px;
-		}
-
-		#skills-content {
-			margin: 0;
-			padding: 0;
-			text-align: center;
-			width: 100%;
-		}
-
-
-
-		#portfolio {
-			padding:5px;
-		}
-
-		#portfolio .project {
+		#work .project {
 		  display: block;
 		  margin: 0 auto 50px auto;
       padding:30px;
@@ -475,6 +431,58 @@
 		  vertical-align: top;
 		  width: 90%;
 		}
+
+    #responsive_casey {
+      display:block;
+      width:100%;
+    }
+
+    #skills {
+      background-image: none;
+      height: 80%;
+      padding: 0px 5px;
+    }
+
+    #skills-content {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      width: 100%;
+    }
+
+    #about-wrapper {
+      padding: 0;
+      width:100%;
+    }
+
+    #about-blurb: {
+      margin: 0px;
+      width: 100%;
+    }
+
+    .curly {
+      display:none;
+    }
+
+    #first,
+    #third {
+      background-color: black;
+      color:white;
+      padding:5px;
+    }
+
+    #about {
+      margin: 0 auto;
+      width:100%;
+    }
+    #about h2 {
+      font-size: 25px;
+      line-height:30px;
+    }
+
+    #about span {
+      font-size: 20px;
+    }
 	}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */

@@ -1,36 +1,17 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+
 <head>
-  <!-- Basic Page Needs
-  ================================================== -->
   <meta charset="utf-8">
   <title>Mary Hipp</title>
 
   <meta name="description" content="Mary Hipp's Portfolio Site">
   <meta name="author" content="Mary Hipp">
   <link rel="icon" type="image/ico" href='./favicon.ico' />
-
-  <!-- Mobile Specific Metas
-  ================================================== -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-  <!-- CSS
-  ================================================== -->
   <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two|Josefin+Slab:600' rel='stylesheet' type='text/css'>
   <link href="css/normalize.css" rel="stylesheet" type="text.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/layout.css">
-
-
-
-
-  <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
 </head>
 
 <body>
@@ -45,69 +26,37 @@
       <li><a href="http://simplyhipp.tumblr.com" target=_blank><img src="images/tumblr.jpeg" alt="Mary Hipp's Tumblr" title="Tumblr" class="contact-link"></a></li>
     </ul>
     <ul id="deep-link-list">
-      <li><a href="#about-me" id="about-link" class="deep-link">About Me</a></li>
+      <li><a href="#intro" id="intro-link" class="deep-link">Intro</a></li>
+      <li><a href="#portfolio" id="portfolio-link" class="deep-link">Portfolio</a></li>
       <li><a href="#skills" id="skills-link" class="deep-link">Skills</a></li>
-      <li><a href="#work" id="work-link" class="deep-link">Work</a></li>
+      <li><a href="#about-me" id="about-link" class="deep-link">About Me</a></li>
     </ul>
   </div>
 
   <div id="main-container">
 
-      <div id="about">
-        <div id="about-me">
-          <div id="mary">
-            <h1>Welcome! I'm Mary.</h1>
-            <img id="responsive_img"src="./images/headshot_responsive.jpg">
-            <ul>
-              <li>Full-stack web developer</li>
-              <li>Problem-solver extraordinaire</li>
-              <li>Self-proclaimed pizza connoisseur</li>
-              <li>Musical prodigy wannabe</li>
-              <li>Unshakable fan of fantasy novels</li>
-              <li>((Loud & proud Gryffindor))</li>
-            </ul>
-          </div>
-        </div>
-        <div id="about-wrapper">
-          <div id="about-blurb">
-            <img src="./images/curlybraceleft.png" id="first-left-curly" class="curly">
-            <h2 id="first"> I am happiest when I'm challenged and solving problems...building websites & software provides the perfect opportunity to do just that.<br><span>I am also skilled at building impressive charcuterie plates and IKEA furniture.</span></h2>
-            <img src="./images/curlybraceright.png" id="right-curly" class="curly">
-            <div id="right-curly-p">
-              <h2 id="second">My brain works in a very organized and detail-oriented way, which gives me killer skills when it comes to coding & learning on my feet.<br><span>You'll be hard-pressed to find an indentation out of place or untested feature when I'm around!</span></h2>
-            </div>
-            <img src="./images/curlybraceleft.png" id="second-left-curly" class="curly">
-            <h2 id="third">Developing software allows me to always be learning and having fun, which are two of my top priorities.</h2>
-          </div>
-        </div>
-      </div>
-
-    <div id="skills">
-      <img src="./images/casey.jpg" id="responsive_casey">
-      <div id="skills-content">
-        <h2>What I Know:</h2>
-          <h3>Front-End Web Development:</h3>
-          <p class="skills-list">JavaScript | HTML5/CSS3 | jQuery | Backbone.js | AJAX | D3.js | Jasmine | Responsive Design</p>
-
-          <h3>Back-End Web Development:</h3>
-          <p class="skills-list">Ruby | Rails | Sinatra | RSpec | Capybara | PostgreSQL | Restful API's</p>
-        <hr>
-        <h2>What I&#39;m Learning:</h2>
-        <p class="skills-list"> iOS & Swift | Angular.js</p>
-        <hr>
-        <h2>Other Skills:</h2>
-        <p class="skills-list">Accessibility | SCRUM | Agile Methodologies | Object-oriented Programming | Test Driven Development | Behavior Driven Development | Team Management | Dog-whispering |  Wireframing | Research Methods for Technologies | Chrome Extension Development | Git & Github</p>
+    <div id="intro">
+      <div id="intro-content">
+        <h1>Welcome! I'm Mary.</h1>
+        <img id="responsive_img"src="./images/headshot_responsive.jpeg">
+        <ul>
+          <li>Full-stack web developer,</li>
+          <li>Problem-solver extraordinaire,</li>
+          <li>Self-proclaimed pizza connoisseur,</li>
+          <li>Musical prodigy wannabe,</li>
+          <li>And professional knowledge sponge.</li>
+        </ul>
       </div>
     </div>
 
-    <div id="work">
+    <div id="portfolio">
       <h2>Portfolio</h2>
       <p>In Spring 2014, I began <a href="https://generalassemb.ly/education/web-development-immersive" target=_blank>General Assembly's full-time web development bootcamp</a>. It is pretty crazy what you can learn to build when coding all day, every day for twelve weeks.</p>
       <p>Take a look below and see for yourself...</p>
     </div>
 
     <div id="work-wrapper">
-      <div id="portfolio">
+      <div id="work">
         <div id="cookbook" class="project">
           <a href="http://myc00kb00k.herokuapp.com" target=_blank><img src="./images/cookbook.jpg"></a>
           <h3><a href="http://myc00kb00k.herokuapp.com" target=_blank>My Cookbook</a></h3>
@@ -129,9 +78,42 @@
       </div>
     </div>
 
+    <div id="skills">
+      <img src="./images/casey.jpg" id="responsive_casey">
+      <div id="skills-content">
+        <h2>What I Know:</h2>
+          <h3>Front-End Web Development:</h3>
+          <p class="skills-list">JavaScript | HTML5/CSS3 | jQuery | Backbone.js | AJAX | D3.js | Jasmine | Responsive Design</p>
+
+          <h3>Back-End Web Development:</h3>
+          <p class="skills-list">Ruby | Rails | Sinatra | RSpec | Capybara | PostgreSQL | Restful API's</p>
+        <hr>
+        <h2>What I&#39;m Learning:</h2>
+        <p class="skills-list"> iOS & Swift | Angular.js</p>
+        <hr>
+        <h2>Other Skills:</h2>
+        <p class="skills-list">Accessibility | SCRUM | Agile Methodologies | Object-oriented Programming | Test Driven Development | Behavior Driven Development | Team Management | Dog-whispering |  Wireframing | Research Methods for Technologies | Chrome Extension Development | Git & Github</p>
+      </div>
+    </div>
+
+    <div id="about-me">
+      <div id="about-content">
+        <h2>Some more about me...</h2>
+        <img src="./images/curlybraceleft.png" id="first-left-curly" class="curly">
+        <p id="first"> I am happiest when I'm challenged and solving problems...building websites & software provides the perfect opportunity to do just that.<br><span>I am also skilled at building impressive charcuterie plates and IKEA furniture.</span></p>
+        <img src="./images/curlybraceright.png" id="right-curly" class="curly">
+        <div id="right-curly-p">
+          <p id="second">My brain works in a very organized and detail-oriented way, which gives me killer skills when it comes to coding & learning on my feet.<br><span>You'll be hard-pressed to find an indentation out of place or untested feature when I'm around!</span></p>
+        </div>
+        <img src="./images/curlybraceleft.png" id="second-left-curly" class="curly">
+        <p id="third">Developing software allows me to always be learning and having fun, which are two of my top priorities.</p>
+      </div>
+    </div>
+
     <div id="footer">
       <p>&copy;2014 Mary Hipp</p>
     </div>
+
   </div>
 
 <script>
