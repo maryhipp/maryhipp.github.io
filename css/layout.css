@@ -24,6 +24,7 @@
   position: fixed;
   top: 0px;
   width:100%;
+  z-index: 100;
 }
 
 #nav #deep-link-list {
@@ -137,31 +138,57 @@
 
 
 /*------portfolio------*/
-#work-wrapper {
+/*#work-wrapper {
   background-image: url('../images/graph_paper.jpg');
   background-size:cover;
-}
+}*/
 
 #work {
-  background-color: rgba(255, 255, 255, 0.6);
+/*  background-color: rgba(255, 255, 255, 0.6);
   color:black;
   margin: 0 auto;
-  padding-bottom: 120px;
+*/  padding-bottom: 90px;
 }
 
 #work .project {
   display: inline-block;
-  margin: 4.5%;
+  margin: 0.25%;
   text-align: center;
   vertical-align: top;
-  width: 40%;
+  position: relative;
+  width: 49%;
 }
 
 
 #work .project img {
-  border: 2px solid black;
+  border: 4px solid black;
+  /*position:relative;*/
   width:100%;
 }
+
+#work .project .description {
+  background: rgba(0,0,0,0.8);
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-weight:bold;
+  height: 92%;
+  left: 0;
+  padding:10px;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  width: 98%;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+#work .project .description:hover {
+  opacity: 1;
+}
+
 
 #work .project h3 {
   font-family: 'Josefin Slab';
@@ -171,13 +198,15 @@
 }
 
 #work a {
-  color:#7a7a7a;
+  color:white;
 }
 
 
 #work p {
   font-size: 20px;
+  line-height:1.25em;
   margin-top: 5px;
+  word-wrap: break-word;
 }
 
 #work .source {
@@ -191,6 +220,7 @@
 #work .source a:hover {
   text-decoration: underline;
 }
+
 
 /*------skills------*/
 #skills {
@@ -340,9 +370,73 @@
       padding: 231px 0 50px 0;
     }
 
-    #work {
-      padding-bottom:141px;
+    #work-wrapper {
+      background-image: url('../images/graph_paper.jpg');
+      background-size:cover;
     }
+
+    #work {
+      background-color: rgba(255, 255, 255, 0.6);
+      color:black;
+      margin: 0 auto;
+      padding-bottom: 141px;
+    }
+
+    #work .project {
+      display: inline-block;
+      margin: 1.5%;
+      position: initial;
+      text-align: center;
+      vertical-align: top;
+      width: 46%;
+    }
+
+
+    #work .project img {
+      border: 2px solid black;
+      width:100%;
+    }
+
+    #work .project .description {
+      background:none;
+      display:inline-block;
+      color:black;
+      left:initial;
+      opacity: 1;
+
+      position: initial;
+      top:initial;
+    }
+
+    #work .project h3 {
+      font-family: 'Josefin Slab';
+      font-size: 40px;
+      margin: 10px 0 0 0;
+      text-align: center;
+    }
+
+    #work a {
+      color:#7a7a7a;
+    }
+
+
+    #work p {
+      font-size: 20px;
+      margin-top: 5px;
+    }
+
+    #work .source {
+      margin: 0;
+    }
+
+    #work .source a {
+      text-decoration: none;
+    }
+
+    #work .source a:hover {
+      text-decoration: underline;
+    }
+
 
     #skills {
       margin-top: -141px;
@@ -448,8 +542,8 @@
 
 		#work .project {
 		  display: block;
-		  margin: 0 auto 50px auto;
-      padding:30px 0;
+		  margin: 0 auto 10px auto;
+      padding:20px 0;
 		  text-align: center;
 		  vertical-align: top;
 		  width: 90%;
