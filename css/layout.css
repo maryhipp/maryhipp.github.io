@@ -92,7 +92,7 @@ html, body {  width: 100%; position: relative;}
   background-image: url('../images/headshot_wood.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center&;
+  background-position: 33% 50%;
   font-size: 27px;
   height:550px;
   margin-top: -91px;
@@ -120,8 +120,9 @@ html, body {  width: 100%; position: relative;}
 
 #intro-content li {
 	font-family: "Josefin Slab";
-  line-height:0.75em;
+  line-height:28px;
   list-style: none;
+  margin-bottom: 0;
 }
 
 /*------portfolio intro------*/
@@ -386,7 +387,7 @@ html, body {  width: 100%; position: relative;}
 			display: inline-block;
 		  float:none;
 		  text-align:center;
-		  margin: 20px auto;
+		  margin: 10px auto;
 		  width: 100%;
 		}
 		#nav #deep-link-list li {
@@ -533,7 +534,7 @@ html, body {  width: 100%; position: relative;}
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
 		#main-container {
-			/*padding-top:141px;*/
+			padding-top:75px;
 		}
 
 		#nav #contact-list {
@@ -602,6 +603,7 @@ html, body {  width: 100%; position: relative;}
       background-image: none;
       height: 80%;
       padding: 0px;
+      margin-top: 20px;
     }
 
     #skills-content {
