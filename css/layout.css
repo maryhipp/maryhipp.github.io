@@ -3,10 +3,13 @@
 /*----------------------*/
 
 /*------general------*/
+
+html, body {  width: 100%; position: relative;}
 #main-container {
   font-family: 'Josefin Slab';
   padding-top: 91px;
   width:100%;
+  overflow-x:hidden;
 }
 
 #responsive_img {
@@ -19,15 +22,31 @@
 
 /*------navigation------*/
 #nav {
-  background-color:black;
+  background-color:transparent;
   display: block;
   position: fixed;
   top: 0px;
   width:100%;
   z-index: 100;
+  opacity: 0.5;
+  transition:all 0.2s ease; -webkit-transition:all 0.2s ease; -moz-transition:all 0.2s ease;
 }
 
-#nav #deep-link-list {
+#nav:hover {  opacity: 1}
+
+#nav-toggle { cursor:pointer; position: absolute; top: 50%; right: 0; width: 50px; height: 50px; .transform(translate(0,-50%)); }
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after { cursor: pointer;border-radius: 1px;height: 3px;width: 30px;background: black ;position: absolute;display: block;content: ''; z-index: 5; right: 0; }
+#nav-toggle span:before {top: -10px;transition: all .5s ease;}
+#nav-toggle span:after {top: 10px; transition: all .5s ease;}
+#nav-toggle:hover span:before { top: -12px;}
+#nav-toggle:hover span:after {  top: 12px;}
+#nav-toggle.active span { background: transparent; }
+#nav-toggle.active span:before, #nav-toggle.active span:after {top: 0;}
+#nav-toggle.active span:before {transform: rotate(45deg);-webkit-transform: rotate(45deg);-ms-transform: rotate(45deg);}
+#nav-toggle.active span:after {transform: rotate(-45deg);-webkit-transform: rotate(-45deg);-ms-transform: rotate(-45deg);}
+
+
+/*#nav #deep-link-list {
   float:left;
   margin-top: 40px;
 }
@@ -47,18 +66,18 @@
 
 #nav .deep-link:hover {
   text-decoration: underline;
-}
+}*/
 
 #nav #contact-list {
-  display: inline;
-  float:right;
-  margin-top:20px;
+  text-align: center;
+  margin:10px;
+  float: right;
 }
 
 #nav #contact-list li{
   display: inline;
   list-style: none;
-  margin: 10px 20px;
+  margin: 10px;
 }
 
 #nav .contact-link {
@@ -138,10 +157,10 @@
 
 
 /*------portfolio------*/
-/*#work-wrapper {
-  background-image: url('../images/graph_paper.jpg');
-  background-size:cover;
-}*/
+#work-wrapper {
+  display: table;
+  width: 100%;
+}
 
 #work {
 /*  background-color: rgba(255, 255, 255, 0.6);
@@ -151,10 +170,10 @@
 }
 
 #work .project {
-  display: inline-block;
+  display: table-cell;
   margin: 0.25%;
   text-align: center;
-  vertical-align: top;
+  vertical-align: middle;
   position: relative;
   width: 49%;
 }
@@ -166,26 +185,38 @@
   width:100%;
 }
 
-#work .project .description {
+#work .project .description-wrapper {
   background: rgba(0,0,0,0.8);
+  width: 100%;
+  height: 98%; position: absolute; top: 0; left: 0; opacity: 0;-webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+#work .project .description {
+  /*background: rgba(0,0,0,0.8);*/
   color: white;
   cursor: pointer;
   display: block;
   font-weight:bold;
-  height: 92%;
-  left: 0;
+/*  height: 92%;*/
+  left: 50%;
   padding:10px;
   position: absolute;
-  top: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
   opacity: 0;
-  width: 98%;
+  width: 75%;
   -webkit-transition: opacity 500ms;
   -moz-transition: opacity 500ms;
   -o-transition: opacity 500ms;
   transition: opacity 500ms;
 }
 
-#work .project .description:hover {
+#work .project:hover .description, #work .project:hover .description-wrapper {
   opacity: 1;
 }
 
@@ -344,7 +375,7 @@
 	/* Smaller than standard 960 (devices and browsers) */
 	@media only screen and (max-width: 1038px) {
 		#main-container {
-			padding-top:141px;
+			/*padding-top:141px;*/
 		}
 		#nav #deep-link-list {
 		  float:none;
@@ -373,6 +404,7 @@
     #work-wrapper {
       background-image: url('../images/graph_paper.jpg');
       background-size:cover;
+      display: block;
     }
 
     #work {
@@ -383,12 +415,13 @@
     }
 
     #work .project {
-      display: inline-block;
-      margin: 1.5%;
-      position: initial;
+      display: block;
+      margin: 0 auto;
+      padding-top: 20px;
+      position: relative;
       text-align: center;
       vertical-align: top;
-      width: 46%;
+      width: 90%;
     }
 
 
@@ -397,11 +430,23 @@
       width:100%;
     }
 
+    #work .project .description-wrapper {
+      background:none;
+      display:inline-block;
+      color:black;
+      left:initial;
+      opacity: 1;
+      position: relative;
+      position: initial;
+      top:initial;
+    }
+
     #work .project .description {
       background:none;
       display:inline-block;
       color:black;
       left:initial;
+      transform: none; -webkit-transform: none; -moz-transform: none;
       opacity: 1;
 
       position: initial;
@@ -452,7 +497,7 @@
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
-		#main-container {
+		/*#main-container {
 			padding-top:141px;
 		}
 		#nav #deep-link-list {
@@ -482,19 +527,15 @@
       text-align: center;
       vertical-align: top;
       width: 90%;
-    }
+    }*/
 	}
 
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
 		#main-container {
-			padding-top:141px;
+			/*padding-top:141px;*/
 		}
-		#nav #deep-link-list {
-		  float:none;
-		  text-align:center;
-		  margin-top: 5px;
-		}
+
 		#nav #contact-list {
 			display: inline-block;
 		  float:none;
@@ -514,8 +555,11 @@
 			height:100%;
 			margin: 0 auto;
 			padding: 0;
-			width: 100%;
+			width: 90%;
+      a
 		}
+
+    #work .project .description { width: 100%; padding: 0;}
 
 		#responsive_img {
 			display:block;
@@ -557,14 +601,14 @@
     #skills {
       background-image: none;
       height: 80%;
-      padding: 0px 5px;
+      padding: 0px;
     }
 
     #skills-content {
       margin: 0;
-      padding: 0;
+      padding: 15px 5%;
       text-align: center;
-      width: 100%;
+      width: 90%;
     }
 
     #about-wrapper {
